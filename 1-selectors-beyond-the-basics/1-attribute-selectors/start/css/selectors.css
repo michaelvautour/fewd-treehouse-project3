@@ -1,2 +1,22 @@
 /* Attribute Selectors ------------- */
 
+form[class="form-contact"] {
+    padding: 20px 24px;
+    background: #f4f7f8;
+}
+
+div[id="container"] {
+    max-width: 500px;
+    margin: auto;
+}
+
+input[type="email"] {
+    background: lightyellow;    
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover{
+    cursor: pointer;
+    color: red;
+}
