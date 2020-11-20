@@ -57,7 +57,7 @@ textarea  {
 	border: none;
 	padding: 15px;
 	border-radius: .3em;
-	border-bottom: 3px solid rgba(0,0,0,0.05);
+  border-bottom: 3px solid rgba(0,0,0,0.05);
 }
 input[type="text"],
 input[type="email"],
