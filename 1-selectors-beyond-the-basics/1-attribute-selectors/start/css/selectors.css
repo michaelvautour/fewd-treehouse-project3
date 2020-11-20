@@ -14,12 +14,14 @@ input[type="email"] {
     background: #fdfee6;    
 }
 
-input[type="submit"]:hover,
+/* input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover{
     cursor: pointer;
     color: red;
-}
+} */
+
+
 
 a[target="_blank"]{
     color: #39add1;
@@ -43,3 +45,58 @@ a[target="_blank"]{
 .rounded {
     border-radius: 50%;
 }
+
+.btn {
+    cursor: pointer;
+    font-size: .875em;
+    font-weight: 400;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+.default {
+    background-color: #52bab3;
+}
+
+.error {
+    background-color: #ff784f;
+}
+
+@media (min-width: 769px) {
+    .inln {
+        width: auto;
+        display: inline-block
+    }
+
+    /* this will target the 2nd class representive of .btn and apply css,
+    this applies to every .btn afterwards. So if you have 5 buttons it
+    would apply to move buttons 2, 3, 4, 5 with the 20px left margin and 
+    always exclude the first one (i.e. targets immediate siblings)*/
+    .btn + .btn {
+        margin-left: 20px;
+    }
+
+}
+
+/* Combinators ------------- */
+
+/* targets a direct child of an element */
+form > a {
+    font-size: .7em;
+}
+
+/* target all sibling label elements that follow h1??? */
+
+h1 ~ label {
+    background: lightgreen;
+    color: white;
+    padding: 5px;
+
+}
+
