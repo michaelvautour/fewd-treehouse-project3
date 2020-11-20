@@ -13,10 +13,62 @@
       <form action="index.html" method="post">
         <h1>Sign Up</h1>
 
-        <input type="text" id="name" name="user_name">
-        <input type="email" id="mail" name="user_email">
-        <input type="password" id="password" name="user_password">
-        <textarea id='bio' name='user_bio'></textarea>
+        <fieldset>
+
+          <legend><span class="number">1</span> Your basic info</legend>
+        <!-- The label for item will allow on the form for item to be clicked on and then bring the user to the spot where the data should be entered -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+
+          <label>Age:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age">
+        <label for="under_13" class="light">Under 13</label><br>
+        <input type="radio" id="over_13" value="over_13" name="user_age">
+        <label for="over_13" class="light">13 or Older</label>
+
+
+
+        </fieldset>
+        <fieldset>
+          <legend><span class="number">2</span> Your profile</legend>
+
+          <label for="bio">Biography:</label>
+          <textarea id='bio' name='user_bio'></textarea>
+
+          <!-- drop down list -->
+          <label for="job">Job role:</label>
+          <select id="job" name="user_job">
+            <optgroup label="Web">
+              <option value="frontend_developer">Front-End Developer</option>
+              <option value="php_developer">PHP Developer</option>
+              <option value="python_developer">Python Developer</option>
+              <option value="web_designer">Web Designer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+              <option value="mobile designer">Mobile Designer</option>
+              <option value="ios_developer">iOS Developer</option>
+              <option value="Android_designer">Android Developer</option>
+            </optgroup>
+
+            <optgroup label="Business">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option>
+            </optgroup>
+          </select>            
+            
+          <label>Interests:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label><br>
+
+        </fieldset>
+         
         <input type="color" id="black" name="helloworld">
 
         <button type="submit">Sign Up</button>
