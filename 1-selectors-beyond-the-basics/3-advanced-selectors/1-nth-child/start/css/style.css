@@ -1,2 +1,9 @@
 /* :nth-child Pseudo-classes------------------ */
 
+/* expressions for nth-child use n  
+3n+4, is selects 4 item and repeats every 3rd*/
+
+li:nth-child(-n+4) {
+    background: #52bab3;
+    color: white;
+}
