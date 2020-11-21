@@ -5,7 +5,8 @@
 @media (min-width: 769px) {
 
 	.main-header,
-	.main-nav {
+	.main-nav,
+	.row {
 		display: flex;
 	}
 
@@ -14,6 +15,26 @@
 		align-items: center;
 	}
 
+	.col {
+		flex: 1;
+		flex-basis: 50%;
+	}
+
+	.row {
+		flex-wrap: wrap;
+	}
+
+	.secondary {
+		order: -1;
+	}
+	/* .primary {
+		order: 1;
+		flex-grow: 2;
+	}
+
+	.tertiary {
+		order: 2;
+	} */
 }
 
 @media (min-width: 1025px) {
@@ -21,6 +42,14 @@
 	.main-header {
 		flex-direction: row;
 		justify-content: space-between;
+	}
+
+	.col {
+		flex-basis: 0;
+	}
+
+	.primary {
+		flex-grow: 1.4;
 	}
 
 }
