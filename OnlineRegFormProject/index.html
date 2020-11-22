@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <title>The Code Review</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -22,8 +23,8 @@
         </div>
 
         <div>
-            <h3 class="border">Contact Information</h2>
             <form action="index.html" method="POST">
+                <legend class="border">Contact Information</legend>
                 <fieldset class="container">
                     <label for="fname">Full Name</label>
                     <input type="text" id="fname" name="fname" required placeholder="Required">
@@ -42,7 +43,7 @@
 
                     <label for="prov">Province</label>
                     <select id="prov" name="prov">
-                        <option disabled selected="chprov">Choose Province</option>
+                        <option selected disabled>Choose Province</option>
                         <option value="ab">Alberta</option>
                         <option value="bc">British Columbia</option>
                         <option value="mb">Manitoba</option>
@@ -64,34 +65,35 @@
 
                 </fieldset>
 
+                <legend class="nletterbord">Newsletter</legend>
                 <fieldset class="container">
-                    <h3 class="nletterbord">Newsletter</h3>
                     
-                    <label>Select the newsletters you would like to receive</label>
+                    <p>Select the newsletters you would like to receive</p>
                 <div>
-                    <input type="checkbox" id="htmllang" name="htmllang">
-                    <label for="htmllang">HTML News</label>
+                    <input type="checkbox" id="htmllang" name="htmllang" value="htmlsnews">
+                    <label for="htmllang" class='padded'>HTML News</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" id="csslang" name="csslang">
-                    <label for="csslang">CSS News</label>
+                    <input type="checkbox" id="csslang" name="csslang" value="cssnews">
+                    <label for="csslang" class='padded'>CSS News</label>
                 </div>      
 
                 <div>
-                    <input type="checkbox" id="jslang" name="jslang">
-                    <label for="jslang">Javascript News</label>
-                </div>
-                    <label>Newsletter format</label>
-
-                <div class="test_border">
-                    <input type="radio" id="html" name="radio_news">
-                    <label for="html" class="light">HTML</label>
+                    <input type="checkbox" id="jslang" name="jslang" value="jsnews">
+                    <label for="jslang" class='padded'>Javascript News</label>
                 </div>
 
-                <div class="test_border">
-                    <input type="radio" id="plain_text" name="radio_news">
-                    <label for="plain_text" class="light">Plain text</label>
+                    <p>Newsletter format</p>
+
+                <div>
+                    <input type="radio" id="html" name="radio_news" value="html_selection">
+                    <label for="html" class='padded'>HTML</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="plain_text" name="radio_news" value="plain_selection">
+                    <label for="plain_text" class='padded'>Plain text</label>
                 </div>
 
                     <label for="comment">Other topics you'd like to hear about</label>
@@ -112,6 +114,5 @@
         <footer class='clearfix'>
             <p>&copy; The Code Review</p>
         </footer>
-    </div>  
 </body>
 </html>

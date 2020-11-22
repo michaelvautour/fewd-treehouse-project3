@@ -4,9 +4,9 @@
     padding: 0;
 }
 
-body {
-    margin-left: 30%;
-    margin-right: 30%;
+main {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
 }
 
 header {
@@ -19,8 +19,10 @@ header {
 }
 
 h2,
+legend,
 h3 {
     font-size: 2em;
+    font-family: 'Merriweather', serif;
 }
 
 .newsarea {
@@ -84,10 +86,16 @@ textarea {
     padding-left: 10px;
 }
 
-label {
+label, 
+fieldset p {
     padding-top: 1.25em;
     font-size: 1.5em;
     color: rgb(155, 166, 169);
+}
+
+
+fieldset p {
+    padding-bottom: 25px;
 }
 
 input[type="text"]::placeholder,
@@ -95,6 +103,20 @@ input[type="email"]::placeholder {
     text-align: right;
     padding-right: 10px;
     font-style: italic;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: white;
+    transition: .5s;
+    padding: 5px;
+}
+
+input,
+select,
+textarea {
+    font-size: 1.25em;
 }
 
 button {
@@ -119,6 +141,32 @@ button {
     color: lightgrey;
   }
 
-    .test_border {
-        border: 1px solid red;
-    } 
+
+    [type="checkbox"],
+    [type="radio"] {
+        vertical-align: middle;
+    }
+
+ .padded {
+     padding-left: 15px;
+ }
+
+ @media screen and (min-width: 768px) {
+    
+    main {
+        margin-right: 20%;
+        margin-left: 20%;;
+    }
+
+    header {
+
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+  }
