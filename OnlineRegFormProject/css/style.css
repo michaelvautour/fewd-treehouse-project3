@@ -42,11 +42,13 @@ div p {
     margin-top: 5px;
     border-top: 3px solid rgba(12, 9, 27, 0.86);
     padding-top: 35px;
+    width: 100%;
 } 
 
 .nletterbord {
     padding-top: 45px;
     border-top: 3px solid rgba(12, 9, 27, 0.86);
+    width: 100%;
 } 
 
 .container {
