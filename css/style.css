@@ -187,29 +187,29 @@ button {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     .dsk_adj {
         width: 66%;
         text-align: left;
         margin-top: 20px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
 
     }
 
     .pcode_lab_adjust {
         padding-right: initial;
-        /* margin-right: 25%; 
-        border: 1px solid red; */
+        width: 32%;
+        /* border: 1px solid red; */
     }
 
-    /* .pcode_inp_adjust {
-        width: 66%;
+    .pcode_inp_adjust {
+        width: 25%;
         text-align: left;
         margin-top: 20px;
-        padding-right: initial;
-        border: 1px solid red;
-    } */
+        margin-right: 41%;
+        /* border: 1px solid red; */
+    }
 
   }
