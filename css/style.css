@@ -96,8 +96,7 @@ textarea {
     padding-left: 10px;
 }
 
-label, 
-fieldset p {
+label {
     padding-top: 1.25em;
     font-size: 1.5em;
     color: rgb(155, 166, 169);
@@ -109,6 +108,7 @@ div {
 
 fieldset p {
     padding-bottom: 25px;
+    color: rgb(155, 166, 169);
 }
 
 input[type="text"]::placeholder,
@@ -155,6 +155,10 @@ button {
   }
 
 
+  [label="html"] {
+      vertical-align: middle;
+  }
+
     [type="checkbox"],
     [type="radio"] {
         vertical-align: middle;
@@ -164,8 +168,12 @@ button {
      padding-left: 15px;
  }
 
-
-
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
  @media screen and (min-width: 768px) {
     
     main {
@@ -187,21 +195,17 @@ button {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        /* border: 1px solid red; */
     }
 
     .dsk_adj {
         width: 66%;
         text-align: left;
         margin-top: 20px;
-        /* border: 1px solid red; */
-
     }
 
     .pcode_lab_adjust {
         padding-right: initial;
         width: 32%;
-        /* border: 1px solid red; */
     }
 
     .pcode_inp_adjust {
@@ -209,7 +213,6 @@ button {
         text-align: left;
         margin-top: 20px;
         margin-right: 41%;
-        /* border: 1px solid red; */
     }
 
   }
